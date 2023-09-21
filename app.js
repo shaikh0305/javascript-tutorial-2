@@ -192,3 +192,129 @@
 //     document.write(i + "<br>");
 // }
 // document.write( "<br>" + "Rest of the Code");
+
+
+
+/* Nested for Loop */
+
+// for(i=0; i<3; i++)
+// {
+//     document.write("<strong>Outer Loop</strong> " + i + "<br>");
+//     for(j=0; j<5; j++)
+//     {
+//         document.write("Inner Loop " + j + "<br>");
+//     }
+// }
+
+
+
+// /* While Loop  (control structure) */
+
+// var i= 0;
+// while(i<5)  
+// {
+//     document.write(i);
+//     i++;
+//     document.write("<br>");
+// }
+
+
+/* Ex: 2 */
+
+// var i = 0;
+// while(true)
+// {
+//     if(i==3)
+//     {
+//         break;
+//     }
+//     document.write(i);
+//     i++;
+//     document.write("<br>");
+// }
+
+
+
+/* Nested While Loop */
+
+// var i = 0;
+// while(i<3)
+// {
+//     document.write("<strong>Outer Loop</strong> ");
+//     document.write(i);
+//     i++;
+//     document.write("<br>");
+
+
+//     var j = 0;
+//     while(j<5)
+//     {
+//         document.write("Inner Loop ");
+//         document.write(j);
+//         j++;
+//         document.write("<br>");
+
+//     }
+// }
+
+
+/* Do While Loop (control statement) */
+
+// var i = 0 ;
+// do
+// {
+//     document.write(i);
+//     i++
+//     document.write("<br>");
+// }while(i<5)
+
+
+
+/* Nested Do While Loop */
+
+// var i = 0;
+// do
+// {
+//     document.write("<strong>Outer Loop</strong> ");
+//     document.write(i);
+//     i++;
+//     document.write("<br>");
+
+//     var j = 0;      
+//     do
+//     {
+//         document.write("Inner Loop");
+//         document.write(j);
+//         j++;
+//         document.write( "<br>");
+
+//     }while(j<5);
+// }while(i<3);
+
+
+
+/*Break Statement*/
+
+// for(i=1; i<10; i++)
+// {
+//     if(i==8)
+//     {
+//         break;   // Stop Loop
+//     }
+//     document.write(i);
+//     document.write("<br>");
+// }
+
+
+
+/* Continue Statement */
+
+// for(i=1; i<10; i++)
+// {
+//     if(i==6)
+//     {
+//         continue;   // Skip Loop
+//     }
+//     document.write(i);
+//     document.write("<br>");
+// }

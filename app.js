@@ -18,15 +18,15 @@
 /* Logical And */
 
 // var a = 20>10;
-// var b = 10<20;
+// var b = 10>20;
 // var c = a && b;
-// document.write(c)
+// document.write(a,b,c)
 
 
 /* Logical OR*/
 
 // var a = 20<10;
-// var b = 10>20;
+// var b = 10<20;
 // var c = a || b;
 // document.write(c)
 
@@ -318,3 +318,68 @@
 //     document.write(i);
 //     document.write("<br>");
 // }
+
+
+
+/* Create and Call Function */
+
+// function display()
+// {
+//     document.write("Create and Call Function" + "<br>");
+// }   
+// display(); 
+
+
+
+/* Function with Parameter */
+
+// function display(Name , Name2)
+// {
+//     document.write(Name+ " To " + Name2);
+// }   
+// display("Welcome" , "Ghanshyam Digital")
+
+
+
+/* Function Argument */
+
+// function add(a,b,c)
+// {
+//     document.write(" A: "+ a + " B: "+ b + " C: "+ c);
+// }
+// add(10,20,30)
+
+
+
+/* Default Parameter */
+
+// function Add(a , b, c = 70)
+// {
+//     document.write("A = " + a + "<br>");
+//     document.write("B = " + b + "<br>");
+//     document.write("C = " + c + "<br>");
+// }
+// Add(10, 20 )
+
+
+/* Ex 2 */
+
+// function Add(a , b, c = null)
+// {
+//     document.write("A = " + a + "<br>");
+//     document.write("B = " + b + "<br>");
+//     document.write("C = " + c + "<br>");
+// }
+// Add(10, 20)
+
+
+/* Ex 3 */
+
+// function Add(num , a=[101,100])
+// {
+//     document.write("A = "  + a[0] + "<br>"); 
+//     document.write("A = "  + a[1] + "<br>");  
+//     document.write("Num = "  + num + "<br>");    
+
+// }
+// Add(100 ,[10,40])

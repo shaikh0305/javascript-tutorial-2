@@ -344,7 +344,7 @@
 /* Function Argument */
 
 // function add(a,b,c)
-// {
+// {    
 //     document.write(" A: "+ a + " B: "+ b + " C: "+ c);
 // }
 // add(10,20,30)
@@ -383,3 +383,98 @@
 
 // }
 // Add(100 ,[10,40])
+
+
+
+/* Rest Parameter */
+
+// function num(a , ...args)
+// {
+//     document.write(a + "<br>");
+//     document.write(args[2]);
+// }
+// num(10,20,30,40,50,60)
+
+
+
+/* Return Statement */
+
+// function Add(a,b){
+//     return(a+b); 
+// }
+// document.write(Add(10,20));     
+
+
+
+
+/* Variable Scope */
+/* Global Scope */
+
+// var i = "I am Global Variable";
+
+// function Show(){
+//     document.write(i + "<br>");
+// }
+// Show();
+
+// /* -- */
+// document.write(i + "<br>");
+
+// /* -- */
+// function Add(){
+//     document.write(i + "<br>");
+// }
+// Add();
+
+// /* -- */
+// if(true){
+//     document.write(i + "<br>");
+// }
+
+
+
+/*Local Scope*/ 
+
+// function Show(){
+//     var j = "I am Local Variable"
+//     document.write(j + "<br>");
+// }
+// Show();
+
+// /* -- */
+// document.write(j + "<br>");
+
+// /* -- */
+// function Add(){
+//   document.write(j + "<br>");
+// }
+// Add();
+
+// /* -- */
+// if(true){
+//     document.write(j + "<br>");
+// }
+
+/* Ex 2 */
+
+// function Show(){
+//     var i = "I Local Vairable "
+//     document.write(i + "<br>");
+
+//     function Add(){
+//         var k = "K Local Vairable";
+//         document.write(k + "<br>");
+//         document.write(i + "<br>");
+//     }
+//     Add();
+// }
+// Show();
+
+
+
+/* Variable Hoisting */
+
+var a = 10;
+document.write(a + " " + b);
+var b = 20;
+

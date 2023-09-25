@@ -1,9 +1,146 @@
+
+/* Variable */
+
+/* (1) variable declared with "var" in Javascript are Function Scoped . 
+   (2) variable declared with "let" & "const" are Block Scoped . 
+*/
+ 
+
+// var name = "safwan";
+// name = "Shaikh"
+// console.log(name); 
+
+
+
+// let name = "safwan";
+// name = "Shaikh"
+// console.log(name); 
+
+
+
+// const name = "safwan";
+// name = "Shaikh"
+// console.log(name); 
+
+
+
+// function modjs(Dell){
+//     if(Dell){
+//         let name = "Safwan";
+//         const Sname = "shaikh"
+//         console.log("my name is " + " "+ name + " "+ Sname);
+//     }
+// }
+// modjs(true) 
+
+
+
+// function modjs(Dell){
+//     if(Dell){
+//         var name = "Safwan";
+//         var Sname = "shaikh"
+//         console.log("my name is " + " "+ name + " "+ Sname);
+//     }
+// }
+// modjs(true)
+
+
+
+
+// var names  = "safwan";
+
+// if(true){
+//    var names  = "shaikh";
+//    console.log(names); 
+
+// } 
+// console.log(names);
+
+
+
+// let names  = "safwan";
+
+// if(true){
+//    let names  = "shaikh";
+//    console.log(names); 
+
+// } 
+// console.log(names);
+
+
+   
+// const car = {type:"Fiat", model:"500", color:"white"};
+
+// car.color = "red";
+
+// car.owner = "Johnson";
+
+// console.log("car color is" + " "  +car.color)
+
+
+// const arr1 = [ 10,20,30,40];
+// arr1.push(50,60,70);
+// console.log(arr1);
+
+
+// const phone = "REDMI"
+// console.log(phone)
+
+
+// var city = "surat";
+// // console.log(city)
+
+// if(true){
+//    let city = "Mumbai"
+//    city = "Valsad"
+//    console.log(city);
+// }
+// console.log(city);
+
+
+
+
 /* Arithmetic Operators */
 
 // var a = 20;
 // var b = 10;
 // var c = a+b;
 // document.write(c)
+
+
+// // var name = "safvan"
+// // name = "safwan"
+// // console.log(name);
+
+// function fn(){
+//     let surname = "shaikh"
+//     console.log("surname", surname);
+//     console.log("name", name);
+// }
+// fn()
+ 
+
+// const name = " shaikh"
+// console.log(name);
+
+// function fn(){
+//    let surname = "shaikh"
+//    console.log("surname", surname);
+
+// }
+// fn()
+
+
+// var Name = "safwan"
+// Name = "shaikh"
+// console.log(Name);
+
+// function name(){
+//     let surname = "Shaikh"
+//     console.log(surname)
+// }
+
+
 
 
 /* Relational or Comparison Operator */
@@ -34,14 +171,14 @@
 
 // var a = 20>10;
 // var c = !a;
-// document.write(c)    
+// document.write(c)
 
 
 /* Bitwise Operators */
 /* Bitwise Logical AND & */
 
 // var a = 5 ;
-// var b = 6 ; 
+// var b = 6 ;
 // var c = a & b;
 // document.write(c);
 
@@ -49,7 +186,7 @@
 /* Bitwise Logical OR | */
 
 // var a = 5 ;
-// var b = 6 ; 
+// var b = 6 ;
 // var c = a | b;
 // document.write(c);
 
@@ -121,7 +258,7 @@
 /* Ex: 2 */
 
 // var result = prompt();
-// if(result <= 30) 
+// if(result <= 30)
 // document.write("Fail");
 // else if (result <= 40)
 // document.write("Pass");
@@ -211,7 +348,7 @@
 // /* While Loop  (control structure) */
 
 // var i= 0;
-// while(i<5)  
+// while(i<5)
 // {
 //     document.write(i);
 //     i++;
@@ -280,7 +417,7 @@
 //     i++;
 //     document.write("<br>");
 
-//     var j = 0;      
+//     var j = 0;
 //     do
 //     {
 //         document.write("Inner Loop");
@@ -326,8 +463,8 @@
 // function display()
 // {
 //     document.write("Create and Call Function" + "<br>");
-// }   
-// display(); 
+// }
+// display();
 
 
 
@@ -336,7 +473,7 @@
 // function display(Name , Name2)
 // {
 //     document.write(Name+ " To " + Name2);
-// }   
+// }
 // display("Welcome" , "Ghanshyam Digital")
 
 
@@ -344,7 +481,7 @@
 /* Function Argument */
 
 // function add(a,b,c)
-// {    
+// {
 //     document.write(" A: "+ a + " B: "+ b + " C: "+ c);
 // }
 // add(10,20,30)
@@ -377,9 +514,9 @@
 
 // function Add(num , a=[101,100])
 // {
-//     document.write("A = "  + a[0] + "<br>"); 
-//     document.write("A = "  + a[1] + "<br>");  
-//     document.write("Num = "  + num + "<br>");    
+//     document.write("A = "  + a[0] + "<br>");
+//     document.write("A = "  + a[1] + "<br>");
+//     document.write("Num = "  + num + "<br>");
 
 // }
 // Add(100 ,[10,40])
@@ -400,9 +537,9 @@
 /* Return Statement */
 
 // function Add(a,b){
-//     return(a+b); 
+//     return(a+b);
 // }
-// document.write(Add(10,20));     
+// document.write(Add(10,20));
 
 
 
@@ -433,7 +570,7 @@
 
 
 
-/*Local Scope*/ 
+/*Local Scope*/
 
 // function Show(){
 //     var j = "I am Local Variable"
@@ -474,7 +611,39 @@
 
 /* Variable Hoisting */
 
-var a = 10;
-document.write(a + " " + b);
-var b = 20;
+// var a = 10;
+// document.write(a + " " + b + "<br>");
+// var b = 20;
+// document.write(a + " " + b)
+
+
+// var name = "Shaikh";
+// console.log(name);
+
+// let name = "Shaikh";
+// console.log(name);
+
+// const name = "safwan";
+// console.log(name); 
+
+
+const hello = ()=>{
+   console.log("Hello I am Fine");
+}
+hello()
+
+
+function oneplusavg(x,y){
+   return 1 + (x+y)
+}
+
+
+let a = 1;
+let b = 2;
+let c = 3;
+
+
+console.log("plus in number" +" "+ oneplusavg(a,b));
+console.log("plus in number" +" "+ oneplusavg(b,c));
+console.log("plus in number" +" "+ oneplusavg(a,c));
 

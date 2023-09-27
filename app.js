@@ -636,10 +636,10 @@
 
 /* Anonymous Function */
 
- hello = function(a,b){ 
-   document.write(a + " " + b);
-}
-hello(10,20)
+//  hello = function(a,b){ 
+//    document.write(a + " " + b);
+// }
+// hello(10,20)
 
 /* Returning Anonymous Function */
 
@@ -659,7 +659,7 @@ hello(10,20)
 // }
 // hello();
 
-/* Immediately Invoked Function Expression */
+/* Immediately Invoked Function Expression [IIFE]*/
 
 /*     // * Important Points *  
   ->  Avoid Creating Global Variable and Function .

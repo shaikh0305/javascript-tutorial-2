@@ -4,23 +4,23 @@
 /* (1) variable declared with "var" in Javascript are Function Scoped . 
    (2) variable declared with "let" & "const" are Block Scoped . 
 */
- 
+
 
 // var name = "safwan";
 // name = "Shaikh"
-// console.log(name); 
+// console.log(name);
 
 
 
 // let name = "safwan";
 // name = "Shaikh"
-// console.log(name); 
+// console.log(name);
 
 
 
 // const name = "safwan";
 // name = "Shaikh"
-// console.log(name); 
+// console.log(name);
 
 
 
@@ -31,17 +31,20 @@
 //         console.log("my name is " + " "+ name + " "+ Sname);
 //     }
 // }
-// modjs(true) 
+// modjs(true)
 
 
 
 // function modjs(Dell){
 //     if(Dell){
-//         var name = "Safwan";
-//         var Sname = "shaikh"
-//         console.log("my name is " + " "+ name + " "+ Sname);
-//     }
-// }
+//        var name = "Safwan";
+//        name = "shaikh"
+//        var Sname = "shaikh"
+//        Sname = "Safwan"
+//        console.log("my name is " + " "+ name + " "+ Sname);
+
+//       }
+//    }
 // modjs(true)
 
 
@@ -51,9 +54,9 @@
 
 // if(true){
 //    var names  = "shaikh";
-//    console.log(names); 
+//    console.log(names);
 
-// } 
+// }
 // console.log(names);
 
 
@@ -62,13 +65,13 @@
 
 // if(true){
 //    let names  = "shaikh";
-//    console.log(names); 
+//    console.log(names);
 
-// } 
+// }
 // console.log(names);
 
 
-   
+
 // const car = {type:"Fiat", model:"500", color:"white"};
 
 // car.color = "red";
@@ -118,7 +121,7 @@
 //     console.log("name", name);
 // }
 // fn()
- 
+
 
 // const name = " shaikh"
 // console.log(name);
@@ -617,33 +620,77 @@
 // document.write(a + " " + b)
 
 
-// var name = "Shaikh";
-// console.log(name);
+/* Function Expression */
 
-// let name = "Shaikh";
-// console.log(name);
+// let i  = "javascript";
 
-// const name = "safwan";
-// console.log(name); 
+// function show(){
+//    document.write(i);
+// }
+// show()
 
+// let disp = function show() {
+//   document.write("Javascript");
+// };
+// disp()
 
-const hello = ()=>{
-   console.log("Hello I am Fine");
+/* Anonymous Function */
+
+ hello = function(a,b){ 
+   document.write(a + " " + b);
 }
-hello()
+hello(10,20)
 
+/* Returning Anonymous Function */
 
-function oneplusavg(x,y){
-   return 1 + (x+y)
-}
+// function Hello(a){
+//   return function(b){
+//    return a+b;
+//   };
+// }
+// let af = (Hello(10));
+// document.write(af(20));
 
+/* Arrow Function */
 
-let a = 1;
-let b = 2;
-let c = 3;
+// hello = () =>{
+//  document.write("Hello World");
 
+// }
+// hello();
 
-console.log("plus in number" +" "+ oneplusavg(a,b));
-console.log("plus in number" +" "+ oneplusavg(b,c));
-console.log("plus in number" +" "+ oneplusavg(a,c));
+/* Immediately Invoked Function Expression */
 
+/*     // * Important Points *  
+  ->  Avoid Creating Global Variable and Function .
+  ->  As it doesn't define variable and function globally so there will be not name conflicts . 
+  ->  Scope is limited to the particular function
+*/
+
+// (function (a,b){
+//    document.write(a +  " " + b);
+// })(10,20)
+
+/*Ex 2*/
+// (function (){document.write("Hello World");})();
+
+/* Typeof Operator */
+
+// document.write(typeof(120)+"<br>");
+// document.write(typeof("Hello")+"<br>");
+// document.write(typeof(true)+"<br>");
+
+/* Undefined */
+
+// let a ;
+
+// // Value not assigned Undefined
+// document.write(a + "<br>");
+
+// //a doesnt exist Undefined
+// document.write(typeof(a)+"<br>")
+
+/* ----- */
+// let a = null ;
+// document.write(a + "<br>");
+// document.write(typeof(a));

@@ -377,7 +377,7 @@
 
 /* Nested While Loop */
 
-// var i = 0;
+// var i = 0; 
 // while(i<3)
 // {
 //     document.write("<strong>Outer Loop</strong> ");
@@ -694,3 +694,53 @@
 // let a = null ;
 // document.write(a + "<br>");
 // document.write(typeof(a));
+
+/* ---- */
+
+// let fees = {
+//   Rahul : 100,
+//   Sumit : 300,
+//   Rohan : 400,
+//   "Super Man" : 400
+// };
+// document.write(fees["Super Man"])
+
+/* ---- */
+
+// let Name ={Pan: 15, Book: 35, Eraser: 10};
+// console.log(Name)
+
+/* ---- */
+
+// let Fees = new Object();
+// let Fees = { };
+// Fees['Suman'] = 100;
+// Fees['Suresh'] = 200;
+// Fees['Rohan'] = 300;
+// Fees['total'] = function() {return(100+200);};
+// document.write(Fees.total());
+
+
+/* Accessing Object Methods */
+
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.write();
+
+
+
+// let fees = {
+//   Rahul: 100,
+//   Manish: 200,
+//   Rajesh: 300,
+//   total: function() {return (100+200+300);}
+  
+// };
+// // document.write(fees.total());
+// document.write(fees['total']());

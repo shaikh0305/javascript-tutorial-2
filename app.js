@@ -695,6 +695,8 @@
 // document.write(a + "<br>");
 // document.write(typeof(a));
 
+
+
 /* ---- */
 
 // let fees = {
@@ -721,26 +723,96 @@
 // document.write(Fees.total());
 
 
+/*Accessing Object Properties*/
+
+// const person = {
+//   firstName: "John",
+//   lastName : "Doe",
+//   age:      50,
+//   id       : 5566,
+
+// }
+// document.write(person.firstName + " ");
+// document.write(person["lastName"]);
+
 /* Accessing Object Methods */
 
-const person = {
-  firstName: "John",
-  lastName : "Doe",
-  id       : 5566,
-  fullName : function() {
-    return this.firstName + " " + this.lastName;
-  }
-};
-document.write();
-
-
-
-// let fees = {
-//   Rahul: 100,
-//   Manish: 200,
-//   Rajesh: 300,
-//   total: function() {return (100+200+300);}
-  
+// const person = {
+//   firstName: "John",
+//   lastName : "Doe",
+//   age:      50,
+//   id       : 5566,
+//   fullName : function() {
+//     return this.firstName + " " + this.lastName +" is " + this.age + " years old.";
+//   }
 // };
-// // document.write(fees.total());
-// document.write(fees['total']());
+// document.write(person.fullName() + "<br>" + "<br>");
+
+// document.write("firstName:" +" "+person.firstName + "<br>");
+// document.write("lastName:"+" " +person.lastName + "<br>");
+// document.write("age:"+ " "+ person.age + "<br>");
+// document.write("Id:"+ " " +person.id); 
+
+
+/*Adding Object Properties and Methods*/
+
+// const fees = {Rahul: 100 , Suman: 200};
+
+// document.write(fees.Rahul + " " + fees.Suman + "<br>");
+// fees.Suresh = 300;
+// document.write(fees.Rahul + " " + fees.Suman +" "+fees.Suresh);
+
+// fees.show = function () {
+//   return this.Suman = 400;
+// };
+// console.log(fees);
+
+
+/* Deleting Properties */
+
+// let fees = {Rahul: 100 , Sumit: 200};
+
+// delete fees.Sumit;
+
+// document.write(fees.Rahul  + " " + fees.Sumit);
+
+// console.log(fees)  
+
+
+
+/* Factory Function */
+
+// function mobile() {
+//   return{
+//     model: 'Galaxy',
+//     price:function(){return("Price: Rs.15000");}
+//   };
+// }
+// let samsung = mobile();
+// document.write(samsung.model + " " + samsung.price());
+
+/*Ex 2 Factory Function with Parameter*/
+
+// function  mobile(model_no) {
+//   return{
+//     model: model_no,
+//     price: function() {
+//       return "Price is a Rs. 15000";
+//     }
+//   };
+// }
+// let samsung = mobile ('Galaxy');
+// let apple = mobile('I phone 12');
+// document.write(samsung.model + " "+ samsung.price()+ "<br>");
+// document.write(apple.model + " "+ apple.price());
+
+
+function  mobile(model_no,price) {
+  return{
+    model: model_no,
+    price:price
+  };
+}
+let samsung = mobile ('samsung s22' , " Price is a Rs ."+120000);
+document.write(samsung.model,samsung.price);
+console.log()

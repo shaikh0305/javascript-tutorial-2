@@ -781,6 +781,8 @@
 
 
 /* Factory Function */
+/* => When a function returns an object , we call it a factory function . 
+it can produce object instance without new keyword or classes . */
 
 // function mobile() {
 //   return{
@@ -806,13 +808,90 @@
 // document.write(samsung.model + " "+ samsung.price()+ "<br>");
 // document.write(apple.model + " "+ apple.price());
 
+/* EX 3 */
 
-function  mobile(model_no,price) {
-  return{
-    model: model_no,
-    price:price
-  };
+// function  mobile(model_no,price) {
+//   return{
+//     model: model_no,
+//     price:price
+//   };
+// }
+// let samsung = mobile ('samsung s22' , " Price is a Rs ."+120000);
+// document.write(samsung.model,samsung.price);
+// console.log()
+
+
+/* Constructor */
+/*=> Object instance are created with constructor , which are basically 
+special function that prepare new instance of an object for use .*/
+
+// function Mobile(){
+//   this.model = 'Samsung s20';
+//   this.price = function(){
+//     document.write(this.model + " price Rs. 12550");
+//   }
+// }
+// let samsung = new Mobile();
+// samsung.price();
+
+/* Constructor with parameter */
+
+// function Mobile(model_no){
+//   this.model = model_no; 
+//   this.price = function(){
+//     document.write(this.model + " price Rs. 56000" + "<br>");
+//   }
+// }
+// let samsung = new Mobile('samsung s21');
+// samsung.price();
+// let apple = new Mobile('I phone XR');
+// apple.price();
+
+/* Check Properties exists */
+
+// function Mobile(model_no) {
+//  this.model = model_no;
+//  this.memory = 4;  
+// }
+
+// let samsung = new Mobile('Galaxy');
+// let Nokia = new Mobile('Nokia G20');
+
+// if(typeof Nokia.memory !== 'undefined'){
+//   document.write("Available"); 
+// }else{
+//   document.write("Dont Exist");
+// }
+
+/*EX 2*/
+
+// function Mobile(model_no){
+//  this.model = model_no;
+// //  this.memory = 4 ;
+// }
+// let samsung = new Mobile('Galaxy');
+// let Nokia = new Mobile('Nokia G20')
+
+// if('memory' in Nokia){
+//   document.write("Available");
+// }else{
+//   document.write("Dont Exist");
+// }
+
+/*EX 3*/
+
+function Mobile(model_no) {
+  this.model = model_no;
+  this.color = "White";
 }
-let samsung = mobile ('samsung s22' , " Price is a Rs ."+120000);
-document.write(samsung.model,samsung.price);
-console.log()
+
+let Vivo = new Mobile('v29');
+let Xiaomi = new Mobile('Redmi 9');
+
+if(Vivo.hasOwnProperty('color')){
+  document.write("Available");
+}else{
+  document.write("Dont Exist");
+}
+
+

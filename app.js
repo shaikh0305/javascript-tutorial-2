@@ -880,18 +880,137 @@ special function that prepare new instance of an object for use .*/
 
 /*EX 3*/
 
-function Mobile(model_no) {
-  this.model = model_no;
-  this.color = "White";
-}
+// function Mobile(model_no) {
+//   this.model = model_no;
+//   this.color = "White";
+// }
 
-let Vivo = new Mobile('v29');
-let Xiaomi = new Mobile('Redmi 9');
+// let Vivo = new Mobile('v29');
+// let Xiaomi = new Mobile('Redmi 9');
 
-if(Vivo.hasOwnProperty('color')){
-  document.write("Available");
-}else{
-  document.write("Dont Exist");
-}
+// if(Vivo.hasOwnProperty('color')){
+//   document.write("Available");
+// }else{
+//   document.write("Dont Exist");
+// }
 
+
+/* for in Loop */
+/*=> The for...in loop is used to loop through an object's properties .*/
+
+// function Mobile(model_no) {
+//   this.model = model_no;
+//   this.color = 'White';
+//   this.ram = '4GB';
+//   this.price = function() {
+//     document.write(this.model + "Price Rs. 15999" + "<br>");
+//   };
+// }
+// let Vivo = new  Mobile('vivo v29');
+// let apple = new Mobile('i phone 6s');
+
+// for (let specs in Vivo){
+//   document.write(Vivo[specs] + "<br>");
+// }
+
+/*EX 2*/
+
+// function Mobile(model_no) {
+//   this.model = model_no;
+//   this.color = 'White';
+//   this.ram = '4GB';
+//   this.price = function() {
+//     document.write(this.model + "Price Rs. 15999" + "<br>");
+//   };
+// }
+// let Vivo = new  Mobile('vivo v29');
+// let apple = new Mobile('i phone 6s');
+
+// for (let specs in Vivo){
+//   if(typeof apple[specs] !== 'function'){
+//   document.write(Vivo[specs] + "<br>");
+//   }
+// }
+
+/*EX 3*/
+
+// function Mobile(model_no) {
+//   this.model = model_no;  
+//   this.color = 'White';
+//   this.ram = '4GB';
+//   this.price = function() {
+//     document.write(this.model + "Price Rs. 15999" + "<br>");
+//   };
+// }
+// let Vivo = new  Mobile('vivo v29');
+// let apple = new Mobile('i phone 6s');
+
+// for (let specs in Vivo){
+//   if(typeof apple[specs] !== 'function'){
+//   document.write(specs +" "+Vivo[specs] + "<br>");
+//   }
+// }
+
+/*EX 4*/
+
+// function Mobile(model_no) {
+//   this.model = model_no;  
+//   this.color = 'White';
+//   this.ram = '4GB';
+//   this.price = function() { 
+//     document.write(this.model + "Price Rs. 15999" + "<br>");
+//   };
+// }
+// let Vivo = new  Mobile('vivo v29');
+// let apple = new Mobile('i phone 6s');
+
+// document.write(Object.keys(apple));
+
+
+/* Constructor as a Class */
+/*=> A specific category can be defined as class .*/
+
+// Mobile = function(model_no , sprice) {
+//   this.model = model_no;
+//   this.color = 'White';
+//   this.price = 20000;
+//   this.sp = sprice;
+//   this.sellingprice = function() {
+//     return (this.price + this.sp);
+//   };
+//   this.data = function() {
+//     document.write("Model No: " + this.model + " Price: " + this.sellingprice());
+//   };
+// }
+// let samsung = new Mobile('samsung A23',3000);
+// let OnePlus = new Mobile('OnePlus Nord 3',12000);
+// OnePlus.data();
+
+
+/* Access Private Property */
+
+// Mobile = function(model_no , sprice) {
+//   this.model = model_no;
+//   this.color = 'White';
+//   let price = 15000;
+//   this.sp = sprice;
+//   this.sellingprice = function() {
+//     return (price);
+//   }
+// };
+// let samsung = new Mobile('samsung A23',3000);
+// let OnePlus = new Mobile('OnePlus Nord 3',12000);
+
+// document.write(samsung.sellingprice())
+
+// Mobile = function(model_no) {
+//   this.model = model_no;
+//   this.price = 2000;
+// }
+// let samsung = new Mobile('samsung A15');
+// let OnePlus = new Mobile('OnePlus Nord 3');
+// Mobile.prototype.color =  'White';
+// console.log(samsung);
+// document.write(samsung.color);
+// document.write(OnePlus.color);
 

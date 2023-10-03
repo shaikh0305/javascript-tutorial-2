@@ -1003,6 +1003,8 @@ special function that prepare new instance of an object for use .*/
 
 // document.write(samsung.sellingprice())
 
+/* Prototype */
+
 // Mobile = function(model_no) {
 //   this.model = model_no;
 //   this.price = 2000;

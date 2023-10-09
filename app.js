@@ -1016,3 +1016,67 @@ special function that prepare new instance of an object for use .*/
 // document.write(samsung.color);
 // document.write(OnePlus.color);
 
+/* iterate Instance and Prototype Member using for in Loop */
+
+// Mobile = function(model_no) {
+//   this.model = model_no;
+//   this.price = 2000;
+// }
+// let samsung = new Mobile('samsung A15');
+// let OnePlus = new Mobile('OnePlus Nord 3');
+// Mobile.prototype.color =  ' White';
+// /*---*/
+// // document.write(Object.keys(samsung));
+// /*---*/
+// for(let keys in samsung){
+//   document.write(keys);
+// }
+
+
+/* ------ */
+
+// let b = {};
+// console.log(Object.getPrototypeOf(b));
+// console.log(Object.getPrototypeOf(Object.prototype));
+
+// let b2 = new Array ();
+// console.log(Object.getPrototypeOf(b2));
+
+
+/* Prototype Works in JavaScript */
+
+// function Mobile(){
+  
+// }
+// console.log(Mobile.prototype);
+
+// let lg = new Mobile ();
+// console.log(lg.__proto__);
+
+// console.log(Mobile.prototype  === lg.__proto__);
+// console.log(Mobile === lg.__proto__.constructor);
+// console.log(Mobile === Mobile.prototype.constructor);
+
+
+/*Ex 2*/
+
+function Mobile(){
+  this.a = 30;
+}
+
+Mobile.prototype.a = 20;
+
+let Add = new Mobile();
+console.log(Add.a);
+
+
+
+let plus = {
+ add: function (a,b){
+    return a+b;
+  },
+  
+  subtract: function(a,b){
+    
+  }
+};

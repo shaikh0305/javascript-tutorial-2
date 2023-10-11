@@ -47,13 +47,37 @@
 // console.log(fruit)
 
 // String Methods
-let name = "Apple"
-console.log(name.length)
-console.log(name.toUpperCase())
-console.log(name.toLowerCase())
-console.log(name.slice(2,4))
-console.log(name.slice(2))
-console.log(name.replace("Ap","Gl"))
+// let name = "Apple"
+// console.log(name.length)
+// console.log(name.toUpperCase())
+// console.log(name.toLowerCase())
+// console.log(name.slice(2,4))
+// console.log(name.slice(2))
+// console.log(name.replace("Ap","Gl"))
+
+
+/* Introduction to Arrays */
+let a = marks_class_12 = [69,85,75,65,false,"Not Present"];
+console.log(marks_class_12)
+marks_class_12[6] = 55 // Adding a new value to the array
+marks_class_12[0] = 70 // Changing the value of an array 
+console.log(marks_class_12[0])
+console.log(marks_class_12[1])
+console.log(marks_class_12[2])
+console.log(marks_class_12[3])
+console.log(marks_class_12[4])      
+console.log(marks_class_12[5])
+console.log(marks_class_12[6])
+console.log(marks_class_12.length)  
+console.log(typeof marks_class_12)
+
+let num =[1,2,3,4,5,6,7,8,9];
+
+console.log(num)
+console.log(num.toString())
+console.log(num.length)
+console.log(typeof num)
+
 
 
 

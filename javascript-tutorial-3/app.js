@@ -57,27 +57,33 @@
 
 
 /* Introduction to Arrays */
-let a = marks_class_12 = [69,85,75,65,false,"Not Present"];
-console.log(marks_class_12)
-marks_class_12[6] = 55 // Adding a new value to the array
-marks_class_12[0] = 70 // Changing the value of an array 
-console.log(marks_class_12[0])
-console.log(marks_class_12[1])
-console.log(marks_class_12[2])
-console.log(marks_class_12[3])
-console.log(marks_class_12[4])      
-console.log(marks_class_12[5])
-console.log(marks_class_12[6])
-console.log(marks_class_12.length)  
-console.log(typeof marks_class_12)
+// let a = marks_class_12 = [69,85,75,65,false,"Not Present"];
+// console.log(marks_class_12)
+// marks_class_12[6] = 55 // Adding a new value to the array
+// marks_class_12[0] = 70 // Changing the value of an array 
+// console.log(marks_class_12[0])
+// console.log(marks_class_12[1])
+// console.log(marks_class_12[2])
+// console.log(marks_class_12[3])
+// console.log(marks_class_12[4])      
+// console.log(marks_class_12[5])
+// console.log(marks_class_12[6])
+// console.log(marks_class_12.length)  
+// console.log(typeof marks_class_12)
 
-let num =[1,2,3,4,5,6,7,8,9];
+/* Array Methods */
 
-console.log(num)
-console.log(num.toString())
-console.log(num.length)
-console.log(typeof num)
+// let num =[1,2,3,4,5,6,7,8,9];
 
+// console.log(num)
+// console.log(num.toString())
+// console.log(num.length)
+// console.log(typeof num)
+
+// let name =  ["Banana", "Orange", "Apple", "Mango"];
+// // console.log(name.length);
+// // console.log(name.toString());
+// console.log(name.pop())
 
 
 
